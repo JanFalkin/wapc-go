@@ -135,7 +135,7 @@ func (e *engine) New(ctx context.Context, code []byte, hostCallHandler wapc.Host
 }
 
 func (e *engine) NewWithDebug(code []byte, hostCallHandler wapc.HostCallHandler) (wapc.Module, error) {
-	return e.New(nil, code, hostCallHandler)
+	return e.New(context.TODO(), code, hostCallHandler)
 }
 
 // SetLogger sets the waPC logger for __console_log calls.

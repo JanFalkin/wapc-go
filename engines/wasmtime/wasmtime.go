@@ -115,7 +115,7 @@ func (e *engine) NewWithDebug(code []byte, hostCallHandler wapc.HostCallHandler)
 }
 
 func (e *engine) NewWithMetering(code []byte, hostCallHandler wapc.HostCallHandler, maxInstructions uint64, pfn unsafe.Pointer) (wapc.Module, error) {
-	return e.New(nil, code, hostCallHandler)
+	return e.New(context.TODO(), code, hostCallHandler)
 }
 
 func (i *Instance) RemainingPoints(context.Context) uint64 {
