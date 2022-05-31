@@ -4,8 +4,8 @@
 package main
 
 import (
-	"github.com/JanFalkin/wapc-go"
-	"github.com/JanFalkin/wapc-go/engines/wasmer"
+	"github.com/wapc/wapc-go"
+	"github.com/wapc/wapc-go/engines/wasmer"
 )
 
 func getEngine() wapc.Engine {
