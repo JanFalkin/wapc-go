@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/JanFalkin/wapc-go"
+	"github.com/wapc/wapc-go"
 )
 
 func main() {
