@@ -11,7 +11,7 @@ import (
 
 	"github.com/bytecodealliance/wasmtime-go"
 
-	wapc "github.com/wapc/wapc-go"
+	wapc "github.com/JanFalkin/wapc-go"
 )
 
 type (
