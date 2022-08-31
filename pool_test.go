@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/JanFalkin/wapc-go"
+	"github.com/wapc/wapc-go"
 )
 
 func testGuestsWithPool(t *testing.T, engines []wapc.Engine) {

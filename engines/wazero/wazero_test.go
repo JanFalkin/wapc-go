@@ -10,7 +10,7 @@ import (
 	"github.com/tetratelabs/wazero"
 	"github.com/tetratelabs/wazero/wasi_snapshot_preview1"
 
-	wapc "github.com/JanFalkin/wapc-go"
+	wapc "github.com/wapc/wapc-go"
 )
 
 // testCtx is an arbitrary, non-default context. Non-nil also prevents linter errors.

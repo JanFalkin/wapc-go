@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/JanFalkin/wapc-go"
-	"github.com/JanFalkin/wapc-go/engines/wazero"
+	"github.com/wapc/wapc-go"
+	"github.com/wapc/wapc-go/engines/wazero"
 )
 
 func main() {

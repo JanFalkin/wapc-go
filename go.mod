@@ -1,4 +1,4 @@
-module github.com/JanFalkin/wapc-go
+module github.com/wapc/wapc-go
 
 go 1.17
 
