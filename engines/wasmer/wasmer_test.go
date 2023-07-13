@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"path/filepath"
+	"path"
 	"testing"
 
 	"github.com/wasmerio/wasmer-go/wasmer"
@@ -35,12 +35,12 @@ func sha256FromBytes(guest []byte) string {
 
 var cache = func(r *wasmer.Store, b []byte) (*wasmer.Module, error) {
 	td := os.TempDir()
-	basePath := filepath.Join(td, "wapc-cache", "wapc-wasmer", "1.0.0")
+	basePath := path.Join(td, "wapc-cache", "wapc-wasmer", "1.0.0")
 	if err := os.MkdirAll(basePath, 0755); err != nil && !os.IsExist(err) {
 		return nil, fmt.Errorf("failed to create cache directory: %w", err)
 	}
 	sha := sha256FromBytes(guest)
-	cachePath := filepath.Join(basePath, sha)
+	cachePath := path.Join(basePath, sha)
 	f, err := os.ReadFile(cachePath)
 	var module *wasmer.Module
 	if err != nil {
